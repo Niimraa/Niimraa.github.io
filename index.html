@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+
+
+
+
+    <title> Haleema Ahmed</title>
+    <style>
+        body {
+            background-color: #e8f5e9; /* Light green background */
+            color: #c013a6; /* Dark text for readability */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+        }
+        .container {
+            padding: 2em;
+            background-color: #f1f8e9; /* Slightly different green for contrast */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            margin-bottom: 2em; /* Space between sections */
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        nav {
+
+
+            background-image: url('https://w.wallhaven.cc/full/96/wallhaven-96l5xd.png');
+
+            background-size: cover;
+            background-position: center;
+            padding: 2em 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav ul li a {
+            color: #fff; /* Adjusted for better visibility on image background */
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #aee1e1; /* Lighter color for hover */
+        }
+        footer {
+            text-align: center;
+            margin-top: 2em;
+            padding: 1em;
+            background-color: #c8e6c9; /* Footer matches nav */
+            border-radius: 5px;
+        }
+        h2 {
+            color: #388e3c; /* Green accent for headers */
+            position: relative;
+            display: inline-block;
+        }
+        h2::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #4caf50;
+            left: 0;
+            bottom: -5px;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        h2:hover::after {
+            transform: scaleX(1);
+        }
+
+        .end-nav {
+    background-image: url('https://hoanghamobile.com/tin-tuc/wp-content/uploads/2023/08/Hinh-nen-anime-cute-35.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    padding: 4em 0; /* Adjust the padding as needed */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.hello {
+            text-align: center; /* Center the text */
+            font-size: 2em; /* Bigger font size */
+            font-weight: bold; /* Bold text */
+            margin-top: 20px; /* Some space above the text */
+            color: #388e3c; /* Green color */
+        }
+
+
+.end-nav ul li a {
+    color: #fff; /* Adjust for better visibility on image background */
+    transition: color 0.3s ease;
+}
+
+.end-nav ul li a:hover {
+    color: #aee1e1; /* Lighter color for hover */
+}
+ 
+
+#experience {
+    padding: 2em 0;
+    text-align: center;
+}
+
+
+
+.job {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 1em; /* Padding inside each job box for space around the text */
+    
+
+}
+
+.job-header {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.job-title strong {
+
+    color: #4caf50; /* Green color for job title */
+}
+
+.job-title p,
+.job-date p {
+    margin: 0;    color: #356e3a; /* Darker green for location and date */
+}
+
+.job-responsibilities {
+    text-align: left;
+    margin-top: 10px;
+    list-style: inside; /* Style for the list of responsibilities */
+}
+
+
+
+
+/* for project */
+.project {
+    margin-bottom: 20px;
+    padding: 1em;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.project-header h3 {
+    color: #4caf50;
+}
+
+.project a {
+    text-decoration: none;
+    color: #388e3c;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+.project-header h3 a {
+    text-decoration: underline;
+    color: #388e3c; /* Or any color you prefer */
+}
+
+.project-header h3 a:hover {
+    text-decoration: none;
+}
+
+
+
+/* for int */
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 20px;
+}
+
+.interest-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally in the flex container */
+    justify-content: center; /* Center items vertically in the flex container */
+    text-align: center;
+    height: 100px; /* Set a fixed height for each interest item */
+}
+
+.interest-item i {
+    font-size: 40px;
+    color: #388e3c; /* Green color for the icons */
+}
+
+.interest-item p {
+    margin-top: 10px;
+}
+
+.interest-item:hover i {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+/* opro */
+#design-portfolio {
+    text-align: center;
+    background-color: #f1f8e9; /* Keeping the background consistent with other sections */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em; /* Same as other containers */
+    padding: 2em; /* Same padding as other sections for consistency */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards; /* Same animation as other sections */
+}
+
+
+.portfolio-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #388e3c; /* Dark green background */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.portfolio-button:hover {
+    background-color: #4caf50; /* Lighter green on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+
+
+
+
+
+/* for contact*/
+
+#contact {
+    text-align: center;
+    padding: 2em 0;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+/* Rest of your existing CSS for .contact-items, .contact-link, etc. */
+
+
+.contact-items {
+    display: inline-block; /* Center the icons container */
+}
+
+.contact-link {
+    display: inline-block; /* Align icons horizontally */
+    margin-right: 20px; /* Space between icons */
+    color: #333;
+    text-decoration: none;
+    vertical-align: middle; /* Align icons vertically */
+}
+
+.contact-link i {
+    margin-right: 8px;
+    color: #388e3c; /* Default icon color */
+}
+
+.fa-linkedin { color: #388e3c; }
+.fa-envelope { color: #388e3c; }
+.fa-github { color: #333; }
+
+/* Optional: Add a hover effect for the links */
+.contact-link:hover {
+    color: #0077b5; /* Change color on hover */
+}
+.contact-link i {
+    font-size: 24px; /* Increase the font size for larger icons */
+    margin-right: 8px;
+    color: #388e3c; /* Default icon color */
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <!-- <li><strong>Personal Web</strong></li> -->
+        </ul>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#volunteer">Volunteer</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#design-portfolio">Design Portfolio</a></li>
+        </ul>
+    </nav>
+<div>
+
+</div>
+<br>
+<div class="hello">
+    Hii, I'm Haleema Ahmed
+</div>
+
+
+
+    <main>
+        <div class="container" id="about" style="display: flex; align-items: center; justify-content: center; text-align: left;">
+            <img src="https://i.pinimg.com/564x/b6/36/b8/b636b8685d1629bf5506c691269ce57e.jpg" alt="About Me Image" style="margin-right: 20px; width: 150px; height: auto;">
+            <div>
+                <h2>About Me</h2>
+                <p>Dedicated learner with a love for technology and innovation. Equipped with a solid background in Programming, Data Interpretation, Research, and Client Relations, I enjoy exploring new technologies and opportunities for growth. Committed to continuous learning and making a meaningful contributions throughout my internship.</p>
+            </div>
+        </div>
+        
+
+
+        <section id="experience" class="container">
+            <h2>   Professional Experience</h2>
+        
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">
+                        <strong>NLP developerr</strong>
+                        <p>Ubineer - Toronto, Ont, CA</p>
+                    </div>
+                    <div class="job-date">
+                        <p>May - September 2023</p>
+                    </div>
+                </div>
+                <ul class="job-responsibilities">
+                    <li>Implement data pipelines in the development environment, using NLP techniques, hence significantly enhancing metric capture efficiency for data visualization.</li>
+                    <li>Implemented functions and developed testing scripts using Python libraries leading to a substantial improvement in the accuracy of the data extracted.</li>
+                    <li>Collaborated with a team of developers for project execution.</li>
+                </ul>
+            </div>
+        
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">
+                        <strong>Digital Marketing Technologist</strong>
+                        <p>CaseStudyU - Ont, CA </p>
+                    </div>
+                    <div class="job-date">
+                        <p>June - November 2023</p>
+                    </div>
+                </div>
+                <ul class="job-responsibilities">
+                    <li>focused on implementing SEO strategies and conducted keyword research, enhancing the website's visibility and search engine ranking.</li>
+                    <li>Utilized A/B testing tools such as Google Optimize and Analytics for testing website performance.</li>
+                    <li>Researched and prepared competitor analysis, with a focus on market competition, which facilitated the creation of marketing content and strategy for targeted customer engagement.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">
+                        <strong>Research Interviewer</strong>
+                        <p>The Canadian Hub for Applied and Social Research (CHASR) - Saskatoon, SK, CA</p>
+                    </div>
+                    <div class="job-date">
+                        <p>September 2022 - March 2023</p>
+                    </div>
+                </div>
+                <ul class="job-responsibilities">
+                    <li>Conducted surveys and interviews to collect data for research projects, which significantly contributed to the research process.</li>
+                    <li>Created comprehensive and detailed reports highlighting key insights and trends from data responses, used for strategic decision-making.</li>
+                </ul>
+            </div>
+
+
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">
+                        <strong>Digital Ticketing Support</strong>
+                        <p>FIFA - Doha, Qatar</p>
+                    </div>
+                    <div class="job-date">
+                        <p>November 2021</p>
+                    </div>
+                </div>
+                <ul class="job-responsibilities">
+                    <li>Utilized ticketing tools like Secutix and tixNgo to effectively address and resolve digital ticket-related issues. Which resulted in significant reduction of customer waiting time.</li>
+                    <li>Examined customer data to verify the authenticity of the ticket holders in the database. Facilitated the issuance and printing of tickets, which helped increase customer satisfaction and promote legal adherence.</li>
+                    <li>Prepared reports based on data analysis and issues encountered to improve the digital ticketing system for FIFA's future matches. </li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">
+                        <strong>Math Tutor</strong>
+                        <p>Freelancing </p>
+                    </div>
+                    <div class="job-date">
+                        <p>May 2019- Present</p>
+                    </div>
+                </div>
+                <ul class="job-responsibilities">
+                    <li>Simplified mathematical concepts to high school students,  resulting in improved understanding and academic performance</li>
+                    <li>Created practice papers, study plan offered feedback, and provided guidance to increased students' confidence.</li>
+                </ul>
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </section>
+        
+
+
+
+
+        <div class="container" id="Projects">
+            <h2>Projects</h2>
+            
+            <!-- Project 1: DocDirectory -->
+            <div class="project">
+                <div class="project-header">
+                    <h3><a href="https://github.com/Niimraa/Doc-Directory" target="_blank">DocDirectory</a></h3>
+                </div>
+                <p>A user-friendly web app that simplifies the process of finding the perfect doctor and booking appointments.</p>
+                <ul>
+                    <li>Provides a comprehensive solution for effortless browsing, selection, and booking appointments with healthcare professionals.</li>
+                    <li>Features a database of doctor profiles, offering detailed information on their specialties, qualifications, and patient reviews with filtering option.</li>
+                    <li>Developed using HTML, CSS, JavaScript, React JS, MongoDB, and Node.js.</li>
+                </ul>
+            </div>
+        
+            <!-- Project 2: Pomodoro Website -->
+            <div class="project">
+                <div class="project-header">
+                    <h3><a href="https://github.com/Niimraa/Pomodoro-Website" target="_blank">Pomodoro Website</a></h3>
+                </div>
+                <p>A website to boost productivity and manage time effectively using the renowned Pomodoro Technique.</p>
+                <ul>
+                    <li>Designed to enhance productivity and concentration through the segmentation of work into brief timed intervals.</li>
+                    <li>Offers a built-in to-do list feature for organized task management.</li>
+                    <li>Developed using HTML, CSS, and JavaScript.</li>
+                </ul>
+            </div>
+        
+        </div>
+        
+        
+
+
+
+
+
+
+
+
+        <div class="container" id="volunteer">
+            <h2>Volunteer Experience</h2>
+            <img src="https://i.pinimg.com/564x/60/8b/ce/608bce08c8d21686a766cca5a74f2343.jpg" alt="Volunteer Image" style="float: right; margin-left: 20px; width: 150px; height: auto;">
+            <p>I strongly believe in giving back to the community.Here's a glimpse into a few key volunteering experiences and contributions I've made.</p>
+        
+            <!-- Volunteer Experience 1: Note Taker -->
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">
+                        <strong>Note Taker</strong>
+                        <p>University Of Saskatchewan</p>
+                    </div>
+                    <div class="job-date">
+                        <p>Sept 2023</p>
+                    </div>
+                </div>
+                <ul class="job-responsibilities">
+                    <li>Provided detailed notes for the introductory course in full-stack web programming (CMPT353).</li>
+                </ul>
+            </div>
+        
+            <!-- Volunteer Experience 2: Medical Administrative Assistant -->
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">
+                        <strong>Medical Administrative Assistant</strong>
+                        <p>Hamad Medical Corporation - Doha, Qatar</p>
+                    </div>
+                    <div class="job-date">
+                        <p>2021</p>
+                    </div>
+                </div>
+                <ul class="job-responsibilities">
+                    <li>Responsible for reviewing insurance claim reports and ensuring accurate entry of all necessary information for processing of claims.</li>
+                </ul>
+            </div>
+        
+            <!-- Volunteer Experience 3: Volunteer at Youth Center -->
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">
+                        <strong>Volunteer</strong>
+                        <p>Youth Center - Doha, Qatar</p>
+                    </div>
+                    <div class="job-date">
+                        <p>2018 – 2021</p>
+                    </div>
+                </div>
+                <ul class="job-responsibilities">
+                    <li>Dispatched food packages.</li>
+                    <li>Helped organize charity events.</li>
+                </ul>
+            </div>
+        
+        </div>
+        
+
+        <div class="container" id="interests">
+            <h2>Interests</h2>
+
+    <p> Whether it's hiking, coding, capturing nature's beauty through a camera lens, or expanding ever-growing collection of plants
+ each hobby adds its own unique charm to my life :)</p>
+
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <i class="fa-solid fa-hiking"></i>
+                    <p>Hiking</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fa-solid fa-football-ball"></i>
+                    <p>Football</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fa-solid fa-seedling"></i>
+                    <p>Plant Care</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <p>Coding</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fa-solid fa-book"></i>
+                    <p>Reading Books</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fa-solid fa-camera-retro"></i>
+                    <p>Photography</p>
+                </div>
+                <div class="interest-item">
+                    <i class="fa-solid fa-palette"></i>
+                    <p>Painting</p>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+        
+        <div class="container" id="design-portfolio">
+            <h2>Design Portfolio</h2>
+            <p>Take a look at my collection of design projects showcasing creativity and skills in Web Develpment, Wireframes,UX design, Graphic design and more. Click the button below to access my full design portfolio.</p>
+            <a href="YOUR_GOOGLE_DOCS_LINK" target="_blank" class="portfolio-button">Portfolio</a>
+        </div>
+        
+
+
+
+
+
+
+        <section id="contact" class="container">
+            <div class="contact-content">
+            <h2>To Contact Me :) </h2>
+            <p> Please Feel free to reach out!!</p>
+            
+            <div class="contact-items">
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="contact-link">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="mailto:qhd167@usask.ca" class="contact-link">
+                    <i class="fa-solid fa-envelope"></i> 
+                </a>
+                <a href="https://github.com/yourusername" target="_blank" class="contact-link">
+                    <i class="fa-brands fa-github"></i> 
+                </a>
+            </div>
+        </div>
+        </section>
+        
+        <!-- https://i.pinimg.com/564x/60/03/c2/6003c2647653346311dff0eafd14043a.jpg -->
+
+    <!-- <div class="end-nav container-fluid">
+        <ul>
+
+        </ul>
+    </div> -->
+
+    <footer class="end-nav container-fluid">
+        <small>
+            <!-- <a href="#">Thank you!</a>  --><p> Thank you </p>
+        </small>
+    </footer>
+
+
+
+
+</body>
+<script>
+function animateInterest(element) {
+    element.style.transform = 'scale(1.1)';
+}
+
+function stopAnimation(element) {
+    element.style.transform = 'scale(1)';
+}
+
+
+</script>
+</html>
