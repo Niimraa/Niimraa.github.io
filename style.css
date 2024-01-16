@@ -1,0 +1,285 @@
+body {
+    background-color: #e8f5e9;
+    color: #c013a6; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+.container {
+    padding: 2em;
+    background-color: #f1f8e9; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 2em; /* Space between sections */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+nav {
+
+
+    background-image: url('https://w.wallhaven.cc/full/96/wallhaven-96l5xd.png');
+
+    background-size: cover;
+    background-position: center;
+    padding: 2em 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+nav ul li a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #aee1e1; 
+}
+footer {
+    text-align: center;
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #c8e6c9; 
+    border-radius: 5px;
+}
+h2 {
+    color: #388e3c; 
+    position: relative;
+    display: inline-block;
+}
+
+
+h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #4caf50;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+h2:hover::after {
+    transform: scaleX(1);
+}
+
+.end-nav {
+background-image: url('https://hoanghamobile.com/tin-tuc/wp-content/uploads/2023/08/Hinh-nen-anime-cute-35.jpg');
+background-size: cover;
+background-position: center bottom;
+padding: 4em 0; 
+border-radius: 5px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.hello {
+    text-align: center; 
+    font-size: 2em; /* Bigger font size */
+    font-weight: bold; 
+    margin-top: 20px; /* Some space above the text */
+    color: #388e3c; 
+}
+
+
+.end-nav ul li a {
+color: #fff; 
+transition: color 0.3s ease;
+}
+
+.end-nav ul li a:hover {
+color: #aee1e1; 
+}
+
+
+#experience {
+padding: 2em 0;
+text-align: center;
+}
+
+
+
+.job {
+text-align: left;
+margin-bottom: 20px;
+padding: 1em; 
+
+
+}
+
+.job-header {
+text-align: left;
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+}
+
+.job-title strong {
+
+color: #4caf50; 
+}
+
+.job-title p,
+.job-date p {
+margin: 0;    color: #356e3a; /* for location and date */
+}
+
+.job-responsibilities {
+text-align: left;
+margin-top: 10px;
+list-style: inside; 
+}
+
+
+
+
+/* for project */
+.project {
+margin-bottom: 20px;
+padding: 1em;
+}
+
+.project-header {
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+}
+
+.project-header h3 {
+color: #4caf50;
+}
+
+.project a {
+text-decoration: none;
+color: #388e3c;
+}
+
+.project a:hover {
+text-decoration: underline;
+}
+.project-header h3 a {
+text-decoration: underline;
+color: #388e3c; 
+}
+
+.project-header h3 a:hover {
+text-decoration: none;
+}
+
+
+
+/* for int */
+.interests-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+gap: 20px;
+}
+
+.interest-item {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center; 
+text-align: center;
+height: 100px; 
+}
+
+.interest-item i {
+font-size: 40px;
+color: #388e3c;
+}
+
+.interest-item p {
+margin-top: 10px;
+}
+
+.interest-item:hover i {
+transform: scale(1.1); 
+}
+
+/* opro */
+#design-portfolio {
+text-align: center;
+background-color: #f1f8e9; /* Keeping the background consistent with other sections */
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+margin-bottom: 2em; 
+padding: 2em; 
+opacity: 0;
+transform: translateY(20px);
+animation: fadeInUp 0.8s ease-out forwards; 
+}
+
+
+.portfolio-button {
+display: inline-block;
+padding: 10px 20px;
+background-color: #388e3c;
+color: white;
+border-radius: 5px;
+text-decoration: none;
+transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.portfolio-button:hover {
+background-color: #4caf50; 
+transform: translateY(-2px); /* Slight lift effect */
+}
+
+
+
+
+
+
+/* for contact*/
+
+#contact {
+text-align: center;
+padding: 2em 0;
+}
+
+.contact-content {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 1em;
+}
+
+/* Rest of your existing CSS for .contact-items, .contact-link, etc. */
+
+
+.contact-items {
+display: inline-block; /* Center the icons container */
+}
+
+.contact-link {
+display: inline-block; /* Align icons horizontally */
+margin-right: 20px; /* Space between icons */
+color: #333;
+text-decoration: none;
+vertical-align: middle; /* Align icons vertically */
+}
+
+.contact-link i {
+margin-right: 8px;
+color: #388e3c; /* Default icon color */
+}
+
+.fa-linkedin { color: #388e3c; }
+.fa-envelope { color: #388e3c; }
+.fa-github { color: #333; }
+
+/* Optional: Add a hover effect for the links */
+.contact-link:hover {
+color: #0077b5; /* Change color on hover */
+}
+.contact-link i {
+font-size: 24px; /* Increase the font size for larger icons */
+margin-right: 8px;
+color: #388e3c; /* Default icon color */
+}
+
