@@ -266,20 +266,20 @@ vertical-align: middle; /* Align icons vertically */
 
 .contact-link i {
 margin-right: 8px;
-color: #388e3c; /* Default icon color */
+color: #388e3c;
 }
 
 .fa-linkedin { color: #388e3c; }
 .fa-envelope { color: #388e3c; }
 .fa-github { color: #333; }
 
-/* Optional: Add a hover effect for the links */
+
 .contact-link:hover {
 color: #0077b5; /* Change color on hover */
 }
 .contact-link i {
 font-size: 24px; /* Increase the font size for larger icons */
 margin-right: 8px;
-color: #388e3c; /* Default icon color */
+color: #388e3c; 
 }
 
