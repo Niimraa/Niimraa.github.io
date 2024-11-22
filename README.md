@@ -4,7 +4,7 @@ Welcome to my personal website's repository. This site features a nature-inspire
 
 ![image2](https://github.com/Niimraa/Niimraa.github.io/assets/133609979/575469ce-b362-4067-803e-9c6638480b76)
 
-
-
-
+# New Update!!
+But to see my updated website built using React, click the link below:  
+[Visit My Updated Website](https://portfolio-website-steel-alpha.vercel.app/)
 
